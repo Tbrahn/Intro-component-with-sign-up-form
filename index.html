@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="styles.css">
   
@@ -16,38 +17,47 @@
   </style>
 </head>
 <body>
+  <div id="main">
+    <div id="primary">
+      <h1>Learn to code by watching others</h1>
 
-  <h1>Learn to code by watching others</h1>
+      <h4>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </h4>
+    </div>
 
-  <h4>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-    but understanding how developers think is invaluable. </h4>
+    <div id="secondary">
+      <div id="blue-section">
+        <h3><b>Try it free 7 days </b> then $20/mo. thereafter</h3>
+      </div>
 
-  <h3>Try it free 7 days then $20/mo. thereafter</h3>
+      <form action="/placeholder" method="post">
+        <ul class="form-section">
+          <li>
+            <input type="text" id="first-name" name="First Name" placeholder="First Name"/>
+          </li>
+          <li>
+            <input type="text" id="last-name" name="Last Name"  placeholder="Last Name"/>
+          </li>
+          <li>
+            <input type="email" id="email" name="email" placeholder="Email">
+          </li>
+          <li>
+            <input type="text" id="password" name="Password" placeholder="Password"/>
+          </li>
+        </ul>
+        <button type="button" id="form-submission">Claim your free trial </button>
+        <p id="form-terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </form>
+    </div>
+  </div>
+ 
 
-  <form action="/placeholder" method="post">
-    <ul class="form-section">
-      <li id="first-name">
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Tbrahn">Tanner Branham</a>.
+      </p>
+    </footer>
 
-      </li>
-      <li id="last-name">
-        
-      </li>
-      <li id="email">
-
-      </li>
-      <li id="password">
-        
-      </li>
-    </ul>
-    <h2 id="form-submission">Claim your free trial </h2>
-    <p id="form-terms">By clicking the button, you are agreeing to our Terms and Services</p>
-  </form>
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Tanner Branham</a>.
-    </p>
-  </footer>
 </body>
 </html>
