@@ -9,17 +9,17 @@ body {
 
 /*Creating basic layout*/
 
+#main {
+    margin: 7% 15%;
+    display: flex;
+}
+
 #primary {
     flex: 1;
 }
 
 #secondary {
     flex: 1;
-}
-
-#main {
-    margin: 7% 15%;
-    display: flex;
 }
 
 /*Styling the primary info section*/
@@ -93,6 +93,8 @@ li {
     margin: 0% 7.5%;
     width: 85%;
     height: 6vh;
+    border-radius: 1.2vh;
+
 }
 
 button:focus, textarea:focus, select:focus{
@@ -118,3 +120,69 @@ a {
 footer{
     margin: 20vh 0 0 0;
 }
+
+/* Styles for mobile */
+
+@media screen and (max-width: 800px) { 
+
+    body {
+        background-image: url(images/bg-intro-mobile.png);
+        text-align: center;
+       }
+
+    #main {
+        margin: 0 6%;
+        display: flex;
+        flex-direction: column;
+        font-size: .7em;
+    }
+
+    #primary {
+        margin: 0 2%;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 10vh 0vh 3vh 0;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 1.5em;
+        margin: 0 0 5vh 0 ;
+    }
+    #blue-section {
+        border-radius: 1.5vh;
+        margin: 2vh 0;
+        height: 10vh;    
+    }
+
+    h3{
+        width: 25vh;
+        font-weight: 400;
+        font-size: 1.4em;
+    }
+    
+    li {
+        border: 1px solid #B9B6D3;
+    }
+
+    input {
+        font-size: 1.2em;
+    }
+
+    #form-submission {
+        font-size: 2em;
+        padding: 1vh;
+        height: 7vh;
+
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    footer{
+        margin: 10vh 0 0 0;
+    }
+  } 
